@@ -15,20 +15,20 @@ When you add some products to your cart, you can check your cart and proceed to 
 You will need to make a Stripe account for manage the payments. Then you have to replace with your keys the following data:
 
 src/app/pages/cart/cart.component.ts
-![Public Key](src/images/PublicKey.png)
+![Public Key](/images/PublicKey.png)
 
 src/server/server.js
-![Secret Key](src/images/SecretKey.png)
+![Secret Key](/images/SecretKey.png)
 
 ### Setup Backend server
 
 First, you will need to install all the dependencies.
 
-npm install
+> npm install
 
 Then you can launch the backend server.
 
-node server/server.js
+> node server/server.js
 
 ### Open the project
 
