@@ -1,27 +1,40 @@
-# Store
+# Store 🛍️
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
+This project is a prototype of a store made with AngularJS, NodeJS and Stripe. 
 
-## Development server
+## Usage
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The application is oriented to be easy to use. When you open the application you will see the home page with all of the products availables. In this page, you can filter the products by type of product, sort them by price or show more or less products on screen. 
 
-## Code scaffolding
+When you add some products to your cart, you can check your cart and proceed to make your checkout where you will be redirect to the payment platform where you have to introduce your data to proceed to the payment.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation for dev
 
-## Build
+### Configuring Stripe
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+You will need to make a Stripe account for manage the payments. Then you have to replace with your keys the following data:
 
-## Running unit tests
+src/app/pages/cart/cart.component.ts
+![Public Key](src/images/PublicKey.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+src/server/server.js
+![Secret Key](src/images/SecretKey.png)
 
-## Running end-to-end tests
+### Setup Backend server
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+First, you will need to install all the dependencies.
 
-## Further help
+npm install
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Then you can launch the backend server.
+
+node server/server.js
+
+### Open the project
+
+The project was made with Angular, so you have to run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. 
+
+The application will automatically reload if you change any of the source files.
+
+## Now you can work on it!
+## Enjoy it! 😀
